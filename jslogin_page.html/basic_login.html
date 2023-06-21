@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Basic Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="">
+        <input type="text" name="username" placeholder="Username" id = 'username'/>
+        <label for="username">Username</label>
+        <input type="password" name="password" placeholder="Password" id = 'password'/>
+        <label for="password"> Password</label>
+        <button onclick=onclicklogin()> login</button>
+    </form>
+    <script>
+        function onclicklogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "sonali" && password == "sonali0130") {
+                alert("login Complete");
+
+            }
+            else {
+                alert("login Failed");
+            }
+        }
+    </script>
+</body>
+
+</html>
